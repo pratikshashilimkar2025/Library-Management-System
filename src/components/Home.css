@@ -1,0 +1,93 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.moving-tagline {
+  background: linear-gradient(135deg, #0056b3, #007bff);
+  color: #fff;
+  padding: 0.8rem 0;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 1.05rem;
+  font-weight: 500;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tagline-content {
+  display: inline-block;
+  animation: scrollText 15s linear infinite;
+}
+
+@keyframes scrollText {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Smooth Carousel */
+.library-carousel img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.carousel-item {
+  transition: transform 0.6s ease;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+}
+
+/* Card Hover Effects */
+.login-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.login-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+.admin-card {
+  border: none !important;
+}
+
+/* Featured Books */
+.book-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease 0.1s;
+}
+.book-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+.book-card .card-title {
+  font-weight: 600;
+}
+.book-card .badge {
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+}
+.book-cover {
+  height: 250px;
+  object-fit: contain;
+}
+
+/* General Layout */
+.login-sections {
+  padding: 2.5rem 0;
+}
+.featured-books {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* Buttons */
+.btn-primary, .btn-outline-primary, .btn-danger {
+  transition: all 0.2s ease-in-out;
+}
+.btn-primary:hover,
+.btn-danger:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
